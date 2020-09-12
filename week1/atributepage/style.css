@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background: url(wp2509013.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    height: 100vh;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 50px;
+    line-height: 70px;
+    text-shadow: 5px 10px 5px #000;
+}
+
+h3 {
+    font-size: 40px;
+    color: yellow;
+    text-shadow: 5px 5px 5px #000;
+
+}
+
+.cart {
+    display: flex;
+}
+
+.cart .list {
+    width: 360px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    transition: 0.3s ease-in-out;
+}
+.cart .list:hover {
+    transform: translateY(-40px);
+    box-shadow: 20px 20px 10px #000;
+}
+h5 {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 5px #000;
+}
+@media screen and (max-width: 600px) {
+    
+    body {
+        background-size: auto;
+        background-position-y: 0px;
+        background-position-x: -400px;
+    }
+    section {
+        justify-content: unset;
+    }
+    .cart {
+        display: block;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    body {
+        background-position-y: 0px;
+    }
+    .cart .list {
+        width: 270px;
+        height: 400px;
+        margin: 30px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 850px) {
+    body {
+        background-position-y: 0px;
+    }
+    .cart .list {
+        width: 310px;
+        height: 400px;
+        margin: 30px;
+    }
+}
